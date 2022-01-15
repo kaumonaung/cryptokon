@@ -7,7 +7,7 @@ import NFT4 from '../public/assets/CryptoKon_4.png';
 
 const WelcomeSection = () => {
   return (
-    <div className='max-w-5xl mx-auto my-20 px-10 md:flex flex-row gap-10 items-center'>
+    <div className='max-w-5xl mx-auto my-16 px-10 md:flex flex-row gap-10 items-center'>
       <div className='md:basis-1/2'>
         <h1 className='text-slate-100 font-bold text-3xl uppercase tracking-wider py-3'>
           Welcome to CryptoKon
