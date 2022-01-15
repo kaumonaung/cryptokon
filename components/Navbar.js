@@ -18,7 +18,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav>
+    <nav className='sticky top-0 z-50 bg-slate-900'>
       <div className='max-w-6xl mx-auto px-5 py-9'>
         <div className='flex justify-between items-center'>
           <div>
@@ -33,21 +33,27 @@ export const Navbar = () => {
 
           {!onMinting && (
             <Link href='/mint'>
-              <a className='hidden md:block text-white font-bold text-xl uppercase tracking-wider hover:text-rose-500'>
+              <a className='hidden md:block text-white font-bold text-xl uppercase tracking-wider hover:text-rose-500 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'>
                 Mint Now
               </a>
             </Link>
           )}
 
           <div className='items-center space-x-2 text-white hidden md:flex'>
-            <a href='' className='py-3 px-2'>
+            <a
+              href=''
+              className='py-3 px-2 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
+            >
               <img
                 src='/assets/Discord-Logo-White.svg'
                 alt='CryptoKon Discord'
                 className='h-5'
               />
             </a>
-            <a href='' className='py-3 px-2'>
+            <a
+              href=''
+              className='py-3 px-2 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
+            >
               <img
                 src='/assets/Twitter-Logo-White.svg'
                 alt='CryptoKon Twitter'
@@ -62,7 +68,10 @@ export const Navbar = () => {
 
           {/* Mobile Button */}
           <div className='md:hidden items-center'>
-            <button onClick={() => setIsMobile(!isMobile)}>
+            <button
+              onClick={() => setIsMobile(!isMobile)}
+              className='focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
+            >
               <MenuIcon className='w-6 h-6 text-white' />
             </button>
           </div>
@@ -73,14 +82,14 @@ export const Navbar = () => {
       <div className={`${isMobile ? 'block' : 'hidden'} text-white md:hidden`}>
         {!onMinting && (
           <Link href='/mint'>
-            <a className='block md:hidden text-white font-bold text-lg uppercase tracking-wide hover:text-rose-500 hover:bg-slate-800 py-4 px-8'>
+            <a className='block md:hidden text-white font-bold text-lg uppercase tracking-wide hover:text-rose-500 hover:bg-slate-800 py-4 px-8 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'>
               Mint Now
             </a>
           </Link>
         )}
         <a
           href=''
-          className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800'
+          className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
         >
           <img
             src='/assets/Discord-Logo-White.svg'
@@ -92,7 +101,7 @@ export const Navbar = () => {
 
         <a
           href=''
-          className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 mb-2'
+          className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 mb-2 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
         >
           <img
             src='/assets/Twitter-Logo-White.svg'
@@ -101,7 +110,7 @@ export const Navbar = () => {
           />
           <p>Twitter</p>
         </a>
-        <div className='flex space-x-5 items-center my-3'>
+        <div className='flex space-x-5 items-center my-3 '>
           <ConnectButton />
           <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-bold text-lg text-transparent bg-clip-text'>
             {account ? `${account.substring(0, 6)}...` : ''}

@@ -4,7 +4,7 @@ import Rarity from '../public/assets/Rarity.gif';
 
 const RaritySection = () => {
   return (
-    <div className='flex justify-center mt-32 mb-20'>
+    <div className='flex justify-center mt-32 mb-14'>
       <div className='max-w-5xl w-screen mx-10 bg-slate-800 rounded-lg py-5 lg:py-20'>
         <div className='flex flex-col md:flex-row gap-10 px-10 py-10 lg:py-0 max-w-4xl mx-auto mb-5 lg:mb-16'>
           <div>

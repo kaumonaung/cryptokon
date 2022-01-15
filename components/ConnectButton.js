@@ -28,7 +28,7 @@ export const ConnectButton = () => {
   return (
     <button
       onClick={connectMetaMask}
-      className='font-bold py-2 px-4 text-sm md:text-base rounded uppercase tracking-wider ml-8 bg-gradient-to-tl from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white'
+      className='font-bold py-2 px-4 text-sm md:text-base rounded uppercase tracking-wider ml-8 bg-gradient-to-tl from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white focus:outline-none focus-visible:ring focus-visible:ring-slate-100'
     >
       {active ? 'Deconnect' : 'Connect Wallet'}
     </button>

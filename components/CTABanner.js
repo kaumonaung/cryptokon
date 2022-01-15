@@ -14,7 +14,7 @@ const CTABanner = () => {
             mauris aliquam mollis. In varius accumsan tortor laoreet pulvinar.
           </p>
           <Link href='/mint'>
-            <a className='mx-auto self-center px-14 md:px-10 py-3 uppercase text-base font-bold tracking-wide bg-white rounded text-rose-500 hover:bg-slate-100'>
+            <a className='mx-auto self-center px-14 md:px-10 py-3 uppercase text-base font-bold tracking-wide bg-white rounded text-rose-500 hover:bg-slate-100 focus:outline-none focus-visible:ring focus-visible:ring-rose-700'>
               Mint Now
             </a>
           </Link>
