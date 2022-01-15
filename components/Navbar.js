@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 export const Navbar = () => {
   const [onMinting, setOnMinting] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const { account } = useWeb3React();
+  const { account, active } = useWeb3React();
   const router = useRouter();
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          {!onMinting && (
+          {!onMinting && active && (
             <Link href='/mint'>
               <a className='hidden md:block text-white font-bold text-xl uppercase tracking-wider hover:text-rose-500'>
                 Mint Now
@@ -71,7 +71,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu Goes Here */}
       <div className={`${isMobile ? 'block' : 'hidden'} text-white md:hidden`}>
-        {!onMinting && (
+        {!onMinting && active && (
           <Link href='/mint'>
             <a className='block md:hidden text-white font-bold text-lg uppercase tracking-wide hover:text-rose-500 hover:bg-slate-800 py-4 px-8'>
               Mint Now
