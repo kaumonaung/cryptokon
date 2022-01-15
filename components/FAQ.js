@@ -4,10 +4,10 @@ import { ChevronUpIcon } from '@heroicons/react/solid';
 
 const FAQ = () => {
   return (
-    <div className='flex justify-center py-0 md:py-20'>
+    <div className='flex justify-center py-0 md:py-20 mb-20 md:mb-5'>
       <div className='max-w-xl w-screen mx-10 bg-gradient-to-tl from-rose-500 to-pink-500 rounded-lg py-14'>
         <h2 className='text-white text-4xl text-center font-bold uppercase tracking-wider mb-8'>
-          CryptoKon FAQ
+          FAQ
         </h2>
 
         <div className='max-w-lg mx-auto px-5'>

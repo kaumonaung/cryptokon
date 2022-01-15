@@ -6,7 +6,7 @@ const Roadmap = () => {
   return (
     <div className='max-w-5xl mx-auto py-10'>
       <div>
-        <h2 className='text-slate-100 font-bold text-4xl uppercase tracking-wider py-5 px-10'>
+        <h2 className='text-slate-100 italic font-bold text-4xl uppercase tracking-wider py-5 px-10'>
           CryptoKon Roadmap
         </h2>
         <p className='text-slate-400 max-w-2xl px-10'>

@@ -5,7 +5,7 @@ import Kmon from '../public/assets/Kmon.png';
 const TeamSection = () => {
   return (
     <div className='max-w-5xl mx-auto py-20 md:py-0'>
-      <h2 className='text-slate-100 font-bold text-3xl md:text-2xl lg:text-3xl uppercase tracking-wider leading-10 pb-5 text-center'>
+      <h2 className='text-slate-100 italic font-bold text-3xl md:text-2xl lg:text-3xl uppercase tracking-wider leading-10 pb-5 text-center'>
         The (Solo) Team
       </h2>
 

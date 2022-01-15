@@ -6,4 +6,9 @@
   body {
     @apply bg-slate-900;
   }
+  *,
+  html {
+    @apply m-0;
+    @apply p-0;
+  }
 }

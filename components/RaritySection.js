@@ -8,7 +8,7 @@ const RaritySection = () => {
       <div className='max-w-5xl w-screen mx-10 bg-slate-800 rounded-lg py-5 lg:py-20'>
         <div className='flex flex-col md:flex-row gap-10 px-10 py-10 lg:py-0 max-w-4xl mx-auto mb-5 lg:mb-16'>
           <div>
-            <h2 className='text-slate-100 font-bold text-3xl md:text-2xl lg:text-3xl uppercase tracking-wider leading-10 pb-5'>
+            <h2 className='text-slate-100 italic font-bold text-3xl md:text-2xl lg:text-3xl uppercase tracking-wider leading-10 pb-5'>
               The rarity specs of 10,000 CryptoKon NFTS
             </h2>
             <p className='text-slate-400'>

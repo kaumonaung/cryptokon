@@ -10,7 +10,7 @@ import FAQ from '../components/FAQ';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>CryptoKon</title>
         <link rel='icon' href='/favicon.ico' />
@@ -27,6 +27,6 @@ export default function Home() {
         <TeamSection />
         <FAQ />
       </main>
-    </div>
+    </>
   );
 }
