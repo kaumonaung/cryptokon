@@ -6,9 +6,24 @@ const HeroGallery = () => {
   return (
     <div className='relative overflow-x-hidden'>
       <div className='animate-marquee whitespace-nowrap'>
-        <Image src={Gallery} alt='CryptoKon NFT Gallery' quality={100} />
-        <Image src={Gallery} alt='CryptoKon NFT Gallery' quality={100} />
-        <Image src={Gallery} alt='CryptoKon NFT Gallery' quality={100} />
+        <Image
+          src={Gallery}
+          alt='CryptoKon NFT Gallery'
+          quality={100}
+          className='text-white'
+        />
+        <Image
+          src={Gallery}
+          alt='CryptoKon NFT Gallery'
+          quality={100}
+          className='text-white'
+        />
+        <Image
+          src={Gallery}
+          alt='CryptoKon NFT Gallery'
+          quality={100}
+          className='text-white'
+        />
       </div>
     </div>
   );

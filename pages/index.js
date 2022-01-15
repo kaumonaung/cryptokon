@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import HeroGallery from '../components/HeroGallery';
 import { Navbar } from '../components/Navbar';
+import HeroGallery from '../components/HeroGallery';
+import WelcomeSection from '../components/WelcomeSection';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <main>
         <HeroGallery />
 
-        <p className='text-white py-20'>Hmm</p>
+        <WelcomeSection />
       </main>
     </div>
   );
