@@ -4,6 +4,7 @@ import HeroGallery from '../components/HeroGallery';
 import WelcomeSection from '../components/WelcomeSection';
 import CTABanner from '../components/CTABanner';
 import RaritySection from '../components/RaritySection';
+import Roadmap from '../components/Roadmap';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <WelcomeSection />
         <CTABanner />
         <RaritySection />
+        <Roadmap />
       </main>
     </div>
   );
