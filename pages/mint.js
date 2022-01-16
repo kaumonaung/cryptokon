@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import Image from 'next/image';
-import MintingGif from '../public/assets/Rarity.gif';
+import MintingGif from '../public/assets/Mint.gif';
 import { PlusCircleIcon, MinusCircleIcon } from '@heroicons/react/solid';
 import { useWeb3React } from '@web3-react/core';
 

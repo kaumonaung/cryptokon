@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Ticket from '../public/assets/Rarity.gif';
+import Ticket from '../public/assets/Golden_Tickets.png';
 
 const Roadmap = () => {
   return (
