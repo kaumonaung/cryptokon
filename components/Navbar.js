@@ -55,6 +55,7 @@ export const Navbar = () => {
                     width={30}
                     height={30}
                     className='cursor-pointer'
+                    alt='Discord Logo'
                   />
                 </a>
               </Link>
@@ -68,6 +69,7 @@ export const Navbar = () => {
                     width={30}
                     height={80}
                     className='cursor-pointer'
+                    alt='Twitter Logo'
                   />
                 </a>
               </Link>
