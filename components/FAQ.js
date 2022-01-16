@@ -1,6 +1,4 @@
 import React from 'react';
-import { Disclosure } from '@headlessui/react';
-import { ChevronUpIcon } from '@heroicons/react/solid';
 
 const FAQ = () => {
   return (
@@ -11,105 +9,35 @@ const FAQ = () => {
         </h2>
 
         <div className='max-w-lg mx-auto px-5'>
-          {/* <Disclosure>
-            {({ open }) => (
-              <>
-                <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-base font-bold text-left text-rose-600 bg-slate-100 rounded-lg hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-rose-700'>
-                  <span>What is your refund policy?</span>
-                  <ChevronUpIcon
-                    className={`${
-                      open ? 'transform rotate-180' : ''
-                    } w-6 h-6 text-rose-700`}
-                  />
-                </Disclosure.Button>
-                <Disclosure.Panel className='px-4 pt-4 pb-2 text-base text-white'>
-                  If you're unhappy with your purchase for any reason, email us
-                  within 90 days and we'll refund you in full, no questions
-                  asked.
-                </Disclosure.Panel>
-              </>
-            )}
-          </Disclosure>
+          <div className='py-2'>
+            <p className='text-slate-200 font-medium text-xl'>
+              What is your refund policy?
+            </p>
+            <p className='text-slate-200 opacity-80 py-2'>
+              If you're unhappy with your purchase for any reason, email us
+              within 90 days and we'll refund you in full, no questions asked.
+            </p>
+          </div>
 
-          <Disclosure as='div' className='mt-5'>
-            {({ open }) => (
-              <>
-                <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-base font-bold text-left text-rose-600 bg-slate-100 rounded-lg hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-rose-700'>
-                  <span>What is your refund policy?</span>
-                  <ChevronUpIcon
-                    className={`${
-                      open ? 'transform rotate-180' : ''
-                    } w-6 h-6 text-rose-700`}
-                  />
-                </Disclosure.Button>
-                <Disclosure.Panel className='px-4 pt-4 pb-2 text-base text-white'>
-                  If you're unhappy with your purchase for any reason, email us
-                  within 90 days and we'll refund you in full, no questions
-                  asked.
-                </Disclosure.Panel>
-              </>
-            )}
-          </Disclosure>
+          <div className='py-2 mt-3'>
+            <p className='text-slate-200 font-medium text-xl'>
+              What is your refund policy?
+            </p>
+            <p className='text-slate-200 opacity-80 py-2'>
+              If you're unhappy with your purchase for any reason, email us
+              within 90 days and we'll refund you in full, no questions asked.
+            </p>
+          </div>
 
-          <Disclosure as='div' className='mt-5'>
-            {({ open }) => (
-              <>
-                <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-base font-bold text-left text-rose-600 bg-slate-100 rounded-lg hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-rose-700'>
-                  <span>What is your refund policy?</span>
-                  <ChevronUpIcon
-                    className={`${
-                      open ? 'transform rotate-180' : ''
-                    } w-6 h-6 text-rose-700`}
-                  />
-                </Disclosure.Button>
-                <Disclosure.Panel className='px-4 pt-4 pb-2 text-base text-white'>
-                  If you're unhappy with your purchase for any reason, email us
-                  within 90 days and we'll refund you in full, no questions
-                  asked.
-                </Disclosure.Panel>
-              </>
-            )}
-          </Disclosure>
-
-          <Disclosure as='div' className='mt-5'>
-            {({ open }) => (
-              <>
-                <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-base font-bold text-left text-rose-600 bg-slate-100 rounded-lg hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-rose-700'>
-                  <span>What is your refund policy?</span>
-                  <ChevronUpIcon
-                    className={`${
-                      open ? 'transform rotate-180' : ''
-                    } w-6 h-6 text-rose-700`}
-                  />
-                </Disclosure.Button>
-                <Disclosure.Panel className='px-4 pt-4 pb-2 text-base text-white'>
-                  If you're unhappy with your purchase for any reason, email us
-                  within 90 days and we'll refund you in full, no questions
-                  asked.
-                </Disclosure.Panel>
-              </>
-            )}
-          </Disclosure>
-
-          <Disclosure as='div' className='mt-5'>
-            {({ open }) => (
-              <>
-                <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-base font-bold text-left text-rose-600 bg-slate-100 rounded-lg hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-rose-700'>
-                  <span>What is your refund policy?</span>
-                  <ChevronUpIcon
-                    className={`${
-                      open ? 'transform rotate-180' : ''
-                    } w-6 h-6 text-rose-700`}
-                  />
-                </Disclosure.Button>
-                <Disclosure.Panel className='px-4 pt-4 pb-2 text-base text-white'>
-                  If you're unhappy with your purchase for any reason, email us
-                  within 90 days and we'll refund you in full, no questions
-                  asked.
-                </Disclosure.Panel>
-              </>
-            )}
-          </Disclosure> */}
+          <div className='py-2 mt-3'>
+            <p className='text-slate-200 font-medium text-xl'>
+              What is your refund policy?
+            </p>
+            <p className='text-slate-200 opacity-80 py-2'>
+              If you're unhappy with your purchase for any reason, email us
+              within 90 days and we'll refund you in full, no questions asked.
+            </p>
+          </div>
         </div>
       </div>
     </div>
