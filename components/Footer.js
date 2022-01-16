@@ -11,23 +11,28 @@ const Footer = () => {
         ©2022 CryptoKon
       </div>
       <div className='flex justify-center gap-x-10 mb-5 py-2'>
-        <Link href='#'>
-          <Image
-            src={Discord}
-            width={30}
-            height={80}
-            className='cursor-pointer'
-            alt='Discord Logo'
-          />
+        <Link href='#' passHref>
+          <a>
+            <Image
+              src={Discord}
+              width={30}
+              height={80}
+              className='cursor-pointer'
+              alt='Discord Logo'
+            />
+          </a>
         </Link>
+
         <Link href='#'>
-          <Image
-            src={Twitter}
-            width={30}
-            height={80}
-            className='cursor-pointer'
-            alt='Twitter Logo'
-          />
+          <a>
+            <Image
+              src={Twitter}
+              width={30}
+              height={80}
+              className='cursor-pointer'
+              alt='Twitter Logo'
+            />
+          </a>
         </Link>
       </div>
     </footer>

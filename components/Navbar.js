@@ -26,13 +26,15 @@ export const Navbar = () => {
         <div className='flex justify-between items-center'>
           <div>
             <Link href='/'>
-              <Image
-                src='/assets/Logo_Light.svg'
-                alt='CryptoKon Logo'
-                className='cursor-pointer'
-                width={250}
-                height={30}
-              />
+              <a>
+                <Image
+                  src='/assets/Logo_Light.svg'
+                  alt='CryptoKon Logo'
+                  className='cursor-pointer'
+                  width={250}
+                  height={30}
+                />
+              </a>
             </Link>
           </div>
 
@@ -47,23 +49,27 @@ export const Navbar = () => {
           <div className='items-center space-x-2 text-white hidden md:flex'>
             <div className='px-2'>
               <Link href='#'>
-                <Image
-                  src={Discord}
-                  width={30}
-                  height={30}
-                  className='cursor-pointer'
-                />
+                <a>
+                  <Image
+                    src={Discord}
+                    width={30}
+                    height={30}
+                    className='cursor-pointer'
+                  />
+                </a>
               </Link>
             </div>
 
             <div className='px-2'>
               <Link href='#'>
-                <Image
-                  src={Twitter}
-                  width={30}
-                  height={80}
-                  className='cursor-pointer'
-                />
+                <a>
+                  <Image
+                    src={Twitter}
+                    width={30}
+                    height={80}
+                    className='cursor-pointer'
+                  />
+                </a>
               </Link>
             </div>
 
@@ -97,7 +103,7 @@ export const Navbar = () => {
           </Link>
         )}
         <Link href='#'>
-          <div className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 mb-2'>
+          <a className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 mb-2'>
             <Image
               src={Discord}
               width={30}
@@ -108,11 +114,11 @@ export const Navbar = () => {
             <p className='text-slate-100 font-medium uppercase tracking-wide text-xs'>
               Dicsord
             </p>
-          </div>
+          </a>
         </Link>
 
         <Link href='#'>
-          <div className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 mb-2'>
+          <a className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 mb-2'>
             <Image
               src={Twitter}
               width={30}
@@ -123,8 +129,9 @@ export const Navbar = () => {
             <p className='text-slate-100 font-medium uppercase tracking-wide text-xs'>
               Twitter
             </p>
-          </div>
+          </a>
         </Link>
+
         <div className='flex space-x-5 items-center my-3 '>
           <ConnectButton />
           <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-bold text-lg text-transparent bg-clip-text'>
