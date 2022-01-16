@@ -6,7 +6,7 @@ import CTABanner from '../components/CTABanner';
 import RaritySection from '../components/RaritySection';
 import Roadmap from '../components/Roadmap';
 import TeamSection from '../components/TeamSection';
-import FAQ from '../components/FAQ';
+import FAQSection from '../components/FAQSection';
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
         <RaritySection />
         <Roadmap />
         <TeamSection />
-        <FAQ />
+        <FAQSection />
       </main>
     </>
   );
