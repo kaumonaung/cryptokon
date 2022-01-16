@@ -14,8 +14,9 @@ const FAQSection = () => {
               What is your refund policy?
             </p>
             <p className='text-slate-200 opacity-80 py-2'>
-              If you're unhappy with your purchase for any reason, email us
-              within 90 days and we'll refund you in full, no questions asked.
+              If you&apos;re unhappy with your purchase for any reason, email us
+              within 90 days and we&apos;ll refund you in full, no questions
+              asked.
             </p>
           </div>
 
@@ -24,16 +25,18 @@ const FAQSection = () => {
               What is an NFT?
             </p>
             <p className='text-slate-200 opacity-80 py-2'>
-              If you're unhappy with your purchase for any reason, email us
-              within 90 days and we'll refund you in full, no questions asked.
+              If you&apos;re unhappy with your purchase for any reason, email us
+              within 90 days and we&apos;ll refund you in full, no questions
+              asked.
             </p>
           </div>
 
           <div className='py-2 mt-3'>
             <p className='text-slate-200 font-medium text-xl'>How many NFTs?</p>
             <p className='text-slate-200 opacity-80 py-2'>
-              If you're unhappy with your purchase for any reason, email us
-              within 90 days and we'll refund you in full, no questions asked.
+              If you&apos;re unhappy with your purchase for any reason, email us
+              within 90 days and we&apos;ll refund you in full, no questions
+              asked.
             </p>
           </div>
         </div>
