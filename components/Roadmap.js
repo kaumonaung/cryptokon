@@ -21,60 +21,60 @@ const Roadmap = () => {
       <div className='md:flex flex-row items-center'>
         <div className='grid grid-cols-2 max-w-5xl mx-auto py-16'>
           <div className='grid grid-cols-8 gap-10 items-center col-span-2 px-10 pb-5'>
-            <div className='col-span-2 sm:col-span-2'>
+            <div className='col-span-3 sm:col-span-2'>
               <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-medium text-transparent bg-clip-text text-xl'>
                 10%
               </p>
             </div>
-            <div className='col-span-6 sm:col-span-6 text-slate-300'>
+            <div className='col-span-5 sm:col-span-6 text-slate-300'>
               Nulla mollis finibus lorem vitae egestas.
             </div>
 
-            <div className='col-span-2 sm:col-span-2'>
+            <div className='col-span-3 sm:col-span-2'>
               <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-medium text-transparent bg-clip-text text-xl'>
                 30%
               </p>
             </div>
-            <div className='col-span-6 sm:col-span-6 text-slate-300'>
+            <div className='col-span-5 sm:col-span-6 text-slate-300'>
               Nulla mollis finibus lorem vitae egestas.
             </div>
 
-            <div className='col-span-2 sm:col-span-2'>
+            <div className='col-span-3 sm:col-span-2'>
               <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-medium text-transparent bg-clip-text text-xl'>
                 50%
               </p>
             </div>
-            <div className='col-span-6 sm:col-span-6 text-slate-300'>
+            <div className='col-span-5 sm:col-span-6 text-slate-300'>
               Phasellus ultricies vehicula tellus, sit amet sollicitudin tellus
               auctor in. Nulla mollis finibus lorem vitae egestas.
             </div>
 
-            <div className='col-span-2 sm:col-span-2'>
+            <div className='col-span-3 sm:col-span-2'>
               <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-medium text-transparent bg-clip-text text-xl'>
                 80%
               </p>
             </div>
-            <div className='col-span-6 sm:col-span-6 text-slate-300'>
+            <div className='col-span-5 sm:col-span-6 text-slate-300'>
               Phasellus ultricies vehicula tellus, sit amet sollicitudin tellus
               auctor in. Nulla mollis finibus lorem vitae egestas.
             </div>
 
-            <div className='col-span-2 sm:col-span-2'>
+            <div className='col-span-3 sm:col-span-2'>
               <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-medium text-transparent bg-clip-text text-xl'>
                 90%
               </p>
             </div>
-            <div className='col-span-6 sm:col-span-6 text-slate-300'>
+            <div className='col-span-5 sm:col-span-6 text-slate-300'>
               Phasellus ultricies vehicula tellus, sit amet sollicitudin tellus
               auctor in.
             </div>
 
-            <div className='col-span-2 sm:col-span-2'>
+            <div className='col-span-3 sm:col-span-2'>
               <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-medium text-transparent bg-clip-text text-xl'>
                 100%
               </p>
             </div>
-            <div className='col-span-6 sm:col-span-6 text-slate-300'>
+            <div className='col-span-5 sm:col-span-6 text-slate-300'>
               Phasellus ultricies vehicula tellus, sit amet sollicitudin tellus
               auctor in.
             </div>

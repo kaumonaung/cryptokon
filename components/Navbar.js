@@ -31,8 +31,8 @@ export const Navbar = () => {
                   src='/assets/Logo_Light.png'
                   alt='CryptoKon Logo'
                   className='cursor-pointer'
-                  width={250}
-                  height={30}
+                  width={200}
+                  height={27}
                   quality={100}
                 />
               </a>
