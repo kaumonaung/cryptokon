@@ -1,4 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import Discord from '../public/assets/Discord-Logo-White.svg';
+import Twitter from '../public/assets/Twitter-Logo-White.svg';
 
 const Footer = () => {
   return (
@@ -7,27 +11,24 @@ const Footer = () => {
         ©2022 CryptoKon
       </div>
       <div className='flex justify-center gap-x-10 mb-5 py-2'>
-        <a
-          href=''
-          className='py-3 px-2 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
-        >
-          <img
-            src='/assets/Discord-Logo-White.svg'
-            alt='CryptoKon Discord'
-            className='h-5'
+        <Link href='#'>
+          <Image
+            src={Discord}
+            width={30}
+            height={80}
+            className='cursor-pointer'
+            alt='Discord Logo'
           />
-        </a>
-
-        <a
-          href=''
-          className='py-3 px-2 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
-        >
-          <img
-            src='/assets/Twitter-Logo-White.svg'
-            alt='CryptoKon Twitter'
-            className='h-5'
+        </Link>
+        <Link href='#'>
+          <Image
+            src={Twitter}
+            width={30}
+            height={80}
+            className='cursor-pointer'
+            alt='Twitter Logo'
           />
-        </a>
+        </Link>
       </div>
     </footer>
   );

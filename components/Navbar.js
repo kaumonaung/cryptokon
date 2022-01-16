@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { MenuIcon } from '@heroicons/react/outline';
 import { ConnectButton } from './ConnectButton';
 import { useWeb3React } from '@web3-react/core';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+import Image from 'next/image';
+import Discord from '../public/assets/Discord-Logo-White.svg';
+import Twitter from '../public/assets/Twitter-Logo-White.svg';
 
 export const Navbar = () => {
   const [onMinting, setOnMinting] = useState(false);
@@ -15,7 +18,7 @@ export const Navbar = () => {
     if (router.pathname == '/mint') {
       setOnMinting(true);
     }
-  }, []);
+  }, [router.pathname]);
 
   return (
     <nav className='sticky top-0 z-50 bg-slate-900'>
@@ -23,10 +26,12 @@ export const Navbar = () => {
         <div className='flex justify-between items-center'>
           <div>
             <Link href='/'>
-              <img
+              <Image
                 src='/assets/Logo_Light.svg'
                 alt='CryptoKon Logo'
-                className='h-6 md:h-8'
+                className='cursor-pointer'
+                width={250}
+                height={30}
               />
             </Link>
           </div>
@@ -40,26 +45,28 @@ export const Navbar = () => {
           )}
 
           <div className='items-center space-x-2 text-white hidden md:flex'>
-            <a
-              href=''
-              className='py-3 px-2 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
-            >
-              <img
-                src='/assets/Discord-Logo-White.svg'
-                alt='CryptoKon Discord'
-                className='h-5'
-              />
-            </a>
-            <a
-              href=''
-              className='py-3 px-2 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
-            >
-              <img
-                src='/assets/Twitter-Logo-White.svg'
-                alt='CryptoKon Twitter'
-                className='h-5'
-              />
-            </a>
+            <div className='px-2'>
+              <Link href='#'>
+                <Image
+                  src={Discord}
+                  width={30}
+                  height={30}
+                  className='cursor-pointer'
+                />
+              </Link>
+            </div>
+
+            <div className='px-2'>
+              <Link href='#'>
+                <Image
+                  src={Twitter}
+                  width={30}
+                  height={80}
+                  className='cursor-pointer'
+                />
+              </Link>
+            </div>
+
             <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-bold text-lg text-transparent bg-clip-text'>
               {account ? `${account.substring(0, 6)}...` : ''}
             </p>
@@ -79,7 +86,9 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Menu Goes Here */}
-      <div className={`${isMobile ? 'block' : 'hidden'} text-white md:hidden`}>
+      <div
+        className={`${isMobile ? 'block' : 'hidden'} text-white md:hidden pb-5`}
+      >
         {!onMinting && (
           <Link href='/mint'>
             <a className='block md:hidden text-white font-bold text-lg uppercase tracking-wide hover:text-rose-500 hover:bg-slate-800 py-4 px-8 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'>
@@ -87,29 +96,35 @@ export const Navbar = () => {
             </a>
           </Link>
         )}
-        <a
-          href=''
-          className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
-        >
-          <img
-            src='/assets/Discord-Logo-White.svg'
-            alt='CryptoKon Discord'
-            className='h-5'
-          />
-          <p>Discord</p>
-        </a>
+        <Link href='#'>
+          <div className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 mb-2'>
+            <Image
+              src={Discord}
+              width={30}
+              height={30}
+              className='cursor-pointer'
+              alt='Discord Logo'
+            />
+            <p className='text-slate-100 font-medium uppercase tracking-wide text-xs'>
+              Dicsord
+            </p>
+          </div>
+        </Link>
 
-        <a
-          href=''
-          className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 mb-2 focus:outline-none focus-visible:ring focus-visible:ring-rose-500'
-        >
-          <img
-            src='/assets/Twitter-Logo-White.svg'
-            alt='CryptoKon Twitter'
-            className='h-5'
-          />
-          <p>Twitter</p>
-        </a>
+        <Link href='#'>
+          <div className='flex space-x-3 items-center py-5 px-8 text-sm hover:bg-slate-800 mb-2'>
+            <Image
+              src={Twitter}
+              width={30}
+              height={30}
+              className='cursor-pointer'
+              alt='Twitter Logo'
+            />
+            <p className='text-slate-100 font-medium uppercase tracking-wide text-xs'>
+              Twitter
+            </p>
+          </div>
+        </Link>
         <div className='flex space-x-5 items-center my-3 '>
           <ConnectButton />
           <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-bold text-lg text-transparent bg-clip-text'>

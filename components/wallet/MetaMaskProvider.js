@@ -23,7 +23,7 @@ const MetaMaskProvider = ({ children }) => {
       .catch(() => {
         setLoaded(true);
       });
-  }, []);
+  }, [active, error, activate]);
 
   if (loaded) {
     return children;
