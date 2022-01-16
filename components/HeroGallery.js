@@ -9,19 +9,19 @@ const HeroGallery = () => {
         <Image
           src={Gallery}
           alt='CryptoKon NFT Gallery'
-          quality={100}
+          quality={80}
           className='text-white'
         />
         <Image
           src={Gallery}
           alt='CryptoKon NFT Gallery'
-          quality={100}
+          quality={80}
           className='text-white'
         />
         <Image
           src={Gallery}
           alt='CryptoKon NFT Gallery'
-          quality={100}
+          quality={80}
           className='text-white'
         />
       </div>

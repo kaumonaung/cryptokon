@@ -28,11 +28,12 @@ export const Navbar = () => {
             <Link href='/'>
               <a>
                 <Image
-                  src='/assets/Logo_Light.svg'
+                  src='/assets/Logo_Light.png'
                   alt='CryptoKon Logo'
                   className='cursor-pointer'
                   width={250}
                   height={30}
+                  quality={100}
                 />
               </a>
             </Link>
