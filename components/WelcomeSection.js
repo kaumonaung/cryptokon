@@ -13,15 +13,20 @@ const WelcomeSection = () => {
           Welcome to CryptoKon
         </h1>
         <p className='text-slate-400'>
-          Aliquam consequat posuere ultricies. Aenean vitae nunc sodales mauris
-          aliquam mollis. In varius accumsan tortor laoreet pulvinar. Nam varius
-          est feugiat pulvinar placerat.
+          CryptoKon will be an exclusive digital convention with everything
+          about crypto and blockchain. Yet, it will feel and play like a RPG
+          where you control your own character, i. e. your NFT
         </p>
         <br />
         <p className='text-slate-400'>
-          Phasellus ultricies vehicula tellus, sit amet sollicitudin tellus
-          auctor in. Nulla mollis finibus lorem vitae egestas. Sed vel urna
-          orci. Quisque placerat ex ante, non rutrum eros vulputate eu.
+          Each NFT in our collection is a ticket but also your character. Only
+          CryptoKon holders can take part as visitors.
+        </p>
+        <br />
+        <p className='text-slate-400'>
+          It&apos;s not finished yet and we need your help. To create the best
+          game-like, pure digital congress, we need your support. Join us on
+          Discord or mint one of our NFTs on launch day.
         </p>
       </div>
 

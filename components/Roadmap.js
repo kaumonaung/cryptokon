@@ -10,11 +10,12 @@ const Roadmap = () => {
           CryptoKon Roadmap
         </h2>
         <p className='text-slate-400 max-w-2xl px-10'>
-          Aliquam consequat posuere ultricies. Aenean vitae nunc sodales mauris
-          aliquam mollis. In varius accumsan tortor laoreet pulvinar. Nam varius
-          est feugiat pulvinar placerat. Phasellus ultricies vehicula tellus,
-          sit amet sollicitudin tellus auctor in. Nulla mollis finibus lorem
-          vitae egestas.
+          CryptoKon is not just an NFT art collection, it&apos;ll be the first
+          game-like digital convention about crypto and blockchain.
+        </p>
+        <p className='text-slate-400 max-w-2xl px-10 mt-2'>
+          We&apos;ve set up some milestones for ourselves. Once we hit a target
+          sell through percentage, we will start expanding and working on them.
         </p>
       </div>
 
@@ -27,7 +28,7 @@ const Roadmap = () => {
               </p>
             </div>
             <div className='col-span-5 sm:col-span-6 text-slate-300'>
-              Nulla mollis finibus lorem vitae egestas.
+              Quit our day jobs and work full time on this.
             </div>
 
             <div className='col-span-3 sm:col-span-2'>
@@ -36,7 +37,8 @@ const Roadmap = () => {
               </p>
             </div>
             <div className='col-span-5 sm:col-span-6 text-slate-300'>
-              Nulla mollis finibus lorem vitae egestas.
+              CryptoKons, held back from initial sale, will be airdropped to
+              CryptoKon holders randomly.
             </div>
 
             <div className='col-span-3 sm:col-span-2'>
@@ -45,8 +47,7 @@ const Roadmap = () => {
               </p>
             </div>
             <div className='col-span-5 sm:col-span-6 text-slate-300'>
-              Phasellus ultricies vehicula tellus, sit amet sollicitudin tellus
-              auctor in. Nulla mollis finibus lorem vitae egestas.
+              Team will be expanded to realize CryptoKon&apos;s future.
             </div>
 
             <div className='col-span-3 sm:col-span-2'>
@@ -55,18 +56,8 @@ const Roadmap = () => {
               </p>
             </div>
             <div className='col-span-5 sm:col-span-6 text-slate-300'>
-              Phasellus ultricies vehicula tellus, sit amet sollicitudin tellus
-              auctor in. Nulla mollis finibus lorem vitae egestas.
-            </div>
-
-            <div className='col-span-3 sm:col-span-2'>
-              <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-medium text-transparent bg-clip-text text-xl'>
-                90%
-              </p>
-            </div>
-            <div className='col-span-5 sm:col-span-6 text-slate-300'>
-              Phasellus ultricies vehicula tellus, sit amet sollicitudin tellus
-              auctor in.
+              An online store exclusive for CryptoKon holders. Gain access to
+              premium merch and collectibles.
             </div>
 
             <div className='col-span-3 sm:col-span-2'>
@@ -75,8 +66,8 @@ const Roadmap = () => {
               </p>
             </div>
             <div className='col-span-5 sm:col-span-6 text-slate-300'>
-              Phasellus ultricies vehicula tellus, sit amet sollicitudin tellus
-              auctor in.
+              Participation and voting on the CryptoKon app development will be
+              enabled for all CryptoKon holders. Get first access!
             </div>
           </div>
         </div>

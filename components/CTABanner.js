@@ -10,8 +10,8 @@ const CTABanner = () => {
             Get Access
           </h2>
           <p className='text-white'>
-            Aliquam consequat posuere ultricies. Aenean vitae nunc sodales
-            mauris aliquam mollis. In varius accumsan tortor laoreet pulvinar.
+            The NFT drop will be soon announced. To get your CryptoKon, check
+            our social channels to find out when the drop will take place.
           </p>
           <Link href='/mint'>
             <a className='mx-auto self-center px-14 md:px-10 py-3 uppercase text-base font-bold tracking-wide bg-white rounded text-rose-500 hover:bg-slate-100 focus:outline-none focus-visible:ring focus-visible:ring-rose-700'>

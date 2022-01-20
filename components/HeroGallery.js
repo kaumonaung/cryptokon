@@ -18,12 +18,6 @@ const HeroGallery = () => {
           quality={80}
           className='text-white'
         />
-        <Image
-          src={Gallery}
-          alt='CryptoKon NFT Gallery'
-          quality={80}
-          className='text-white'
-        />
       </div>
     </div>
   );

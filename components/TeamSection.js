@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Kmon from '../public/assets/Kmon.png';
-import Mokkar from '../public/assets/Mokkar.png';
+import Thundanor from '../public/assets/Thundanor.png';
+import Klohokkar from '../public/assets/Klohokkar.png';
 
 const TeamSection = () => {
   return (
@@ -14,14 +14,14 @@ const TeamSection = () => {
         <div className='py-5'>
           <div className='max-w-xs mx-auto px-10 py-5'>
             <Image
-              src={Kmon}
+              src={Thundanor}
               alt='CryptoKon Team Kmon'
               quality={100}
               className='text-white rounded'
             />
           </div>
           <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-bold text-transparent bg-clip-text text-3xl text-center'>
-            kmon
+            thundanor
           </p>
           <p className='text-slate-400 text-center py-3'>Design & Build</p>
         </div>
@@ -29,14 +29,14 @@ const TeamSection = () => {
         <div className='py-5'>
           <div className='max-w-xs mx-auto px-10 py-5'>
             <Image
-              src={Mokkar}
+              src={Klohokkar}
               alt='CryptoKon Team Mokkar'
               quality={100}
               className='text-white rounded'
             />
           </div>
           <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-bold text-transparent bg-clip-text text-3xl text-center'>
-            mokkar
+            klohokkar
           </p>
           <p className='text-slate-400 text-center py-3'>Concept Artist</p>
         </div>

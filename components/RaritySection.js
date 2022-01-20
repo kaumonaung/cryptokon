@@ -12,13 +12,13 @@ const RaritySection = () => {
               The rarity specs of 10,000 CryptoKon NFTS
             </h2>
             <p className='text-slate-400'>
-              Aliquam consequat posuere ultricies. Aenean vitae nunc sodales
-              mauris aliquam mollis. In varius accumsan tortor laoreet pulvinar.
+              Each CryptoKon NFT has its own style, as there are more than 330
+              different traits to choose from.
             </p>
             <br />
             <p className='text-slate-400'>
-              Aliquam consequat posuere ultricies. Aenean vitae nunc sodales
-              mauris aliquam mollis.
+              This creates so many possible variations. In fact, more than 5
+              trillion combinations are possible. Yours will always be unique.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ const RaritySection = () => {
 
           <div className='flex justify-between items-center'>
             <p className='bg-gradient-to-tl from-rose-500 to-pink-500 font-black text-transparent bg-clip-text text-5xl'>
-              96
+              95
             </p>
             <p className='text-slate-300 font-medium text-lg uppercase tracking-wider'>
               Upper Bodies
