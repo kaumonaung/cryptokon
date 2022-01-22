@@ -3,7 +3,7 @@ import { injected } from './wallet/connectors';
 import { useWeb3React } from '@web3-react/core';
 import toast from 'react-hot-toast';
 
-export const ConnectButton = () => {
+export const ConnectButton = ({ white }) => {
   const { active, activate, deactivate, setError } = useWeb3React();
 
   async function connectMetaMask() {
@@ -23,6 +23,17 @@ export const ConnectButton = () => {
     } else {
       toast.error('Please install MetaMask');
     }
+  }
+
+  if (white) {
+    return (
+      <button
+        onClick={connectMetaMask}
+        className='font-bold py-3 px-10 text-2xl rounded uppercase tracking-wider my-2 text-rose-500 bg-slate-100 focus:outline-none focus-visible:ring focus-visible:ring-white'
+      >
+        Connect Wallet
+      </button>
+    );
   }
 
   return (

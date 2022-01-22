@@ -1,13 +1,86 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar } from '../components/Navbar';
+import MintingLoadingState from '../components/MintingLoadingState';
+import { ConnectButton } from '../components/ConnectButton';
 import Image from 'next/image';
 import MintingGif from '../public/assets/Mint.gif';
 import { PlusCircleIcon, MinusCircleIcon } from '@heroicons/react/solid';
 import { useWeb3React } from '@web3-react/core';
+import TestABI from '../contracts/TestABI.json';
+import { ethers } from 'ethers';
+import toast from 'react-hot-toast';
 
 const Mint = () => {
+  const { active, chainId, account } = useWeb3React();
+  const [claimingNFT, setClaimingNFT] = useState(false);
+  const [totalSupply, setTotalSupply] = useState('');
   const [mintAmount, setMintAmount] = useState(1);
-  const { active } = useWeb3React();
+
+  const mintNFTs = async () => {
+    if (active && account) {
+      const cost = process.env.NEXT_PUBLIC_WEI_COST;
+      const gasLimit = process.env.NEXT_PUBLIC_GAS_LIMIT;
+      const totalCostWei = (Number(cost) * mintAmount).toString();
+      const totalGasLimit = (Number(gasLimit) * mintAmount).toString();
+
+      try {
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+        const contract = new ethers.Contract(
+          process.env.NEXT_PUBLIC_CONTRACT_ADDRESS,
+          TestABI,
+          signer
+        );
+
+        const transaction = await contract.mint(mintAmount, {
+          value: totalCostWei,
+          gasLimit: totalGasLimit.toString(),
+        });
+
+        setClaimingNFT(true);
+        await transaction.wait();
+        setClaimingNFT(false);
+
+        toast.success(
+          `Awesome! ${mintAmount} ${
+            process.env.NEXT_PUBLIC_NFT_SYMBOL
+          } successfully sent to ${account.substring(
+            0,
+            6
+          )}...${account.substring(account.length - 4)}`,
+          {
+            duration: 10000,
+          }
+        );
+      } catch (err) {
+        toast.error('Sorry, something went wrong please try again later.');
+      }
+    }
+  };
+
+  useEffect(() => {
+    const fetchTotalSupply = async () => {
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const contract = new ethers.Contract(
+        process.env.NEXT_PUBLIC_CONTRACT_ADDRESS,
+        TestABI,
+        provider
+      );
+
+      const totalSupply = await contract.totalSupply();
+      setTotalSupply(totalSupply.toString());
+    };
+
+    if (
+      active &&
+      chainId &&
+      chainId.toString() === process.env.NEXT_PUBLIC_CHAIN_ID
+    ) {
+      fetchTotalSupply();
+    } else {
+      setTotalSupply('?');
+    }
+  }, [active, chainId]);
 
   return (
     <div>
@@ -24,11 +97,11 @@ const Mint = () => {
             />
           </div>
           <p className='text-rose-900 font-bold text-4xl lg:text-5xl text-center py-5 uppercase tracking-wider'>
-            0/10000 Minted
+            {totalSupply}/10000
           </p>
 
           <p className='text-slate-100 text-xl font-bold text-center py-2 mt-2'>
-            One CryptoKon NFT costs 0.05 ETH
+            One CryptoKon NFT costs {process.env.NEXT_PUBLIC_ETH_COST} ETH
           </p>
 
           <p className='max-w-sm mx-auto text-slate-100 font-light text-lg text-center py-2'>
@@ -57,19 +130,28 @@ const Mint = () => {
           </div>
 
           <div className='flex justify-center'>
-            {active ? (
-              <button className='font-bold py-3 px-10 text-2xl rounded uppercase tracking-wider my-2 text-rose-500 bg-slate-100 focus:outline-none focus-visible:ring focus-visible:ring-white'>
-                Mint Now
-              </button>
-            ) : (
-              <p className='bg-gradient-to-tl from-rose-500 to-pink-500 bg-clip-text text-transparent uppercase text-lg font-medium'>
-                Connect to Wallet First
-              </p>
-            )}
+            {(() => {
+              if (active && !claimingNFT) {
+                return (
+                  <button
+                    onClick={() => mintNFTs()}
+                    className='font-bold py-3 px-10 text-2xl rounded uppercase tracking-wider my-2 text-rose-500 bg-slate-100 focus:outline-none focus-visible:ring focus-visible:ring-white'
+                  >
+                    Mint Now
+                  </button>
+                );
+              } else {
+                if (active && claimingNFT) {
+                  return <MintingLoadingState />;
+                } else {
+                  return <ConnectButton white={true} />;
+                }
+              }
+            })()}
           </div>
 
           <p className='text-slate-100 font-medium text-lg text-center py-5'>
-            {(mintAmount * 0.05).toFixed(2)} ETH
+            {(mintAmount * process.env.NEXT_PUBLIC_ETH_COST).toFixed(2)} ETH
           </p>
         </div>
       </main>
